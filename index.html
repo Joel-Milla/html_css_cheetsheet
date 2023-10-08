@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>WebDev Documentation</title>
+        <!-- Styles links -->
+        <link rel="stylesheet" href="./assets/css/normalize.css">
+        <link rel="stylesheet" href="./assets/css/styles.css">
+    </head>
+    <body>
+        <header>
+            <h1>HTML Tag Reference</h1>
+            <nav>
+                <ul>
+                    <li><a href="./styles.html">CSS</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section id="notes">
+                <h2>Important Notes</h2>
+                <ul>
+                    <li>For main documentation about HTML, CSS, Javascript go to <a href="https://developer.mozilla.org/en-US/" target="_blank">MDN Web Docs.</a></li>
+                    <li>Separate the page in sections using &lt;section&gt; to improve clarity and SEO, and only use &lt;div&gt; for styling purposes, such as modifying a page.</li>
+                    <li>Save the styles, fonts, and images on a resources file.</li>
+                    <li>Good to have a 'reset.css' or 'normalize.css' that deletes all the default styles that the browser applies to the html files.</li>
+                </ul>
+            </section>
+            <section id="header_tags">
+                <h2>Header Tags</h2>
+                <table class="tags">
+                    <thead>
+                        <tr>
+                            <th scope="col">Tag</th>
+                            <th scope="col">Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>&lt;header&gt;</td>
+                            <td>Container for navigational links or introductory information</td>
+                        </tr>
+                        <tr>
+                            <td>&lt;nav&gt;</td>
+                            <td>Defines a block of navigational links</td>
+                        </tr>
+                        <tr>
+                            <td>&lt;h1&gt;</td>
+                            <td>Can declare the main header here. Only use one h1 per page</td>
+                        </tr>
+                        <tr>
+                            <td>&lt;a&gt;</td>
+                            <td>The anchor element, use to link content to a href, which is a hyperlink reference</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table class="attributes">
+                    <thead>
+                        <tr>
+                            <th scope="col">Attributes</th>
+                            <th scope="col">Possible Values</th>
+                            <th scope="col">Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>href</td>
+                            <td>url, id (using #X notation), or relative path</td>
+                            <td>Use in anchor elements to link to external webistes or other parts of the document.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            <section id="webpage_tags">
+                <h2>Webpage Tags</h2>
+                <table class="tags">
+                    <thead>
+                        <tr>
+                            <th scope="col">Tag</th>
+                            <th scope="col">Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>&lt;main&gt;</td>
+                            <td>Know where is located the important information of a webiste. Must be separated from the header</td>
+                        </tr>
+                        <tr>
+                            <td>&lt;footer&gt;</td>
+                            <td>Provides useful links and usually at the end of the website</td>
+                        </tr>
+                        <tr>
+                            <td>&lt;h1&gt;</td>
+                            <td>Can declare the main header here. Only use one h1 per page</td>
+                        </tr>
+                        <tr>
+                            <td>&lt;a&gt;</td>
+                            <td>The anchor element, use to link content to a href, which is a hyperlink reference</td>
+                        </tr>
+                        <tr>
+                            <td>&lt;section&gt;</td>
+                            <td>Defines a part of the document that share a common theme</td>
+                        </tr>
+                        <tr>
+                            <td>&lt;article&gt;</td>
+                            <td>Usually goes inside a section. Contains information that builds a section, like comments. In a newspaper, each story could go inside an article.</td>
+                        </tr>
+                        <tr>
+                            <td>&lt;aside&gt;</td>
+                            <td>Usually goes with a section or article. Container to wrap information that enhace a text, like a quote.</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table class="attributes">
+                    <thead>
+                        <tr>
+                            <th scope="col">Attributes</th>
+                            <th scope="col">Possible Values</th>
+                            <th scope="col">Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>target</td>
+                            <td>'_blank'</td>
+                            <td>Used in the anchor tag, so when the user clicks on the link, he is redirected to a new tab.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            <section id="external_media_tags">
+                <h2>External Media Tags</h2>
+                <table class="tags">
+                    <thead>
+                        <tr>
+                            <th scope="col">Tag</th>
+                            <th scope="col">Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>&lt;img&gt;</td>
+                            <td>Used to add an image into the html. It is a self closing tag.</td>
+                        </tr>
+                        <tr>
+                            <td>&lt;figure&gt;</td>
+                            <td>Used to encapsulate an image, diagram or code snippet</td>
+                        </tr>
+                        <tr>
+                            <td>&lt;footer&gt;</td>
+                            <td>Provides useful links and usually at the end of the website</td>
+                        </tr>
+                        <tr>
+                            <td>&lt;figcaption&gt;</td>
+                            <td>Describes an image and usually goes inside a figure.</td>
+                        </tr>
+                        <tr>
+                            <td>&lt;video&gt;</td>
+                            <td>Used to include a video on a website. Uses a src to link the video.</td>
+                        </tr>
+                        <tr>
+                        <tr>
+                            <td>&lt;audio&gt;</td>
+                            <td>Usually has a &lt;source&gt; tag inside in order to include the audio.</td>
+                        </tr>
+                        <tr>
+                            <td>&lt;source&gt;</td>
+                            <td>Goes inside the &lt;audio&gt; tag to reference the audio. Usually contains a source and type attribute.</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table class="attributes">
+                    <thead>
+                        <tr>
+                            <th scope="col">Attributes</th>
+                            <th scope="col">Possible Values</th>
+                            <th scope="col">Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>src</td>
+                            <td>url or relative path of media.</td>
+                            <td>Used in image elements or source elements (for audio) to render the media.</td>
+                        </tr>
+                        <tr>
+                            <td>alt</td>
+                            <td>Describes the image to the user if the image doesnt load. Improves readability and SEO.</td>
+                            <td>Used in image elements render the image.</td>
+                        </tr>
+                        <tr>
+                            <td>autoplay</td>
+                            <td>No value</td>
+                            <td>Used in audio/video elements to autoplay the media.</td>
+                        </tr>
+                        <tr>
+                            <td>controls</td>
+                            <td>No value</td>
+                            <td>Display the controls to play and stop on an audio/video element.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            <section id="table_tags">
+                <h2>Table Tags</h2>
+                <table class="tags">
+                    <thead>
+                        <tr>
+                            <th scope="col">Tag</th>
+                            <th scope="col">Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>&lt;table&gt;</td>
+                            <td>The wrapper element of all HTML tables.</td>
+                        </tr>
+                        <tr>
+                            <td>&lt;thead&gt;</td>
+                            <td>Set of rows that define the headers of the table</td>
+                        </tr>
+                        <tr>
+                            <td>&lt;tbody&gt;</td>
+                            <td>Set of rows that define the content of the table</td>
+                        </tr>
+                        <tr>
+                            <td>&lt;tr&gt;</td>
+                            <td>Table row container</td>
+                        </tr>
+                        <tr>
+                            <td>&lt;td&gt;</td>
+                            <td>The data of each row container</td>
+                        </tr>
+                        <tr>
+                            <td>&lt;tfoot&gt;</td>
+                            <td>Defines the footer part of the tabl</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table class="attributes">
+                    <thead>
+                        <tr>
+                            <th scope="col">Attributes</th>
+                            <th scope="col">Possible Values</th>
+                            <th scope="col">Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>scope</td>
+                            <td>'col'/'row'</td>
+                            <td>Used in headers to determine if the next information is header of column or header.</td>
+                        </tr>
+                        <tr>
+                            <td>colspan</td>
+                            <td>integer</td>
+                            <td>Defines how many columns a td element spans vertically. (in the columns)</td>
+                        </tr>
+                        <tr>
+                            <td>rowspan</td>
+                            <td>integer</td>
+                            <td>Defines how many rows the td spans horizontally (in the rows)</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </main>
+        <footer>
+            <h6>Posted by: <em>Joel Milla</em></h6>
+        </footer>
+    </body>
+</html>

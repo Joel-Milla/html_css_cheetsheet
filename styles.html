@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <title>WebDev Documentation</title>
+        <!-- Styles links -->
+        <link rel="stylesheet" href="./assets/css/normalize.css">
+        <link rel="stylesheet" href="./assets/css/styles.css">
+    </head>
+    <body>
+        <header>
+            <h1>CSS Property Reference</h1>
+            <nav>
+                <ul>
+                    <li><a href="./index.html">HTML</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section id="general_tags">
+                <h2>General Customization</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th scope="col">Property</th>
+                            <th scope="col">Possible Values</th>
+                            <th scope="col">Description</th>
+                        </tr>
+
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>box-sizing</td>
+                            <td>border-box</td>
+                            <td>Can be applied at the start of the website to all elements (*). Makes size of an element more predicable by resizing the content to have a whole number and not to be modified/added by margin-padding</td>
+                        </tr>
+                        <tr>
+                            <td>font-style</td>
+                            <td>Can be all the possible fonts that exist.</td>
+                            <td>Can use a font from <a href="https://fonts.google.com/" target="_blank">google</a> and apply a fallback if the font can't be rendered like sans or sans-serif.</td>
+                        </tr>
+                        <tr>
+                            <td>font-weight</td>
+                            <td>Can be a number or 'bold'.</td>
+                            <td>Details the thickness of a word.</td>
+                        </tr>
+                        <tr>
+                            <td>margin</td>
+                            <td>Four possible values that detail the margin top-right-bottom-left.</td>
+                            <td>Detail the space between the selector and the other elements.</td>
+                        </tr>
+                        <tr>
+                            <td>padding</td>
+                            <td>Four possible values that detail the padding top-right-bottom-left.</td>
+                            <td>Detail the space between the content contained on the selector and the border of the selector.</td>
+                        </tr>
+                        <tr>
+                            <td>background-image</td>
+                            <td>'url(url...)'</td>
+                            <td>Details a background-image that will be contained on the selector.</td>
+                        </tr>
+                        <tr>
+                            <td>max-width or min-width</td>
+                            <td>number, percentage, rem, em</td>
+                            <td>The website adapts when the page increase or decreases. This property stops the content from adapting when reaching a max/min width..</td>
+                        </tr>
+                        <tr>
+                            <td>border-radius</td>
+                            <td>number values</td>
+                            <td>Details how rounded the corners of a border will be. 50px makes a circle.</td>
+                        </tr>
+                        <tr>
+                            <td>display</td>
+                            <td>'inline-block', 'block'</td>
+                            <td>Details if certain elements can be together in the same line or will span the whole width of the page.</td>
+                        </tr>
+                        <tr>
+                            <td>list-style</td>
+                            <td>'none'</td>
+                            <td>Removes the default option for bullet points/numbers for the ordered/unordered lists.</td>
+                        </tr>
+                        <tr>
+                            <td>list-style-position</td>
+                            <td>'inside'</td>
+                            <td>This applies to ul or ol. It details that the bullet points should be inside the parent container of the ul/ol.</td>
+                        </tr>
+                        <tr>
+                            <td>opacity</td>
+                            <td>0-1</td>
+                            <td>1 is full opaque, full resolution. 0 value is full transparent, can't see it.</td>
+                        </tr>
+                        <tr>
+                            <td>text-transform</td>
+                            <td>'uppercase' - 'lowercase'</td>
+                            <td>transforms the text to all uppercase or lower case.</td>
+                        </tr>
+                        <tr>
+                            <td>text-align</td>
+                            <td>'center' - 'right' - 'left'</td>
+                            <td>Align the content based on the parent element of the selector.</td>
+                        </tr>
+                        <tr>
+                            <td>text-transform</td>
+                            <td>'uppercase' - 'lowercase'</td>
+                            <td>transforms the text to all uppercase or lower case.</td>
+                        </tr>
+                        <tr>
+                            <td>letter-spacing -- word-spacing -- line-height</td>
+                            <td>Number</td>
+                            <td>Modifies the space between the words. The number is a ratio. If want to increase the letter spacing of double the height of each character, then the value will be 2 and if the value is 1 then everything stays the same.</td>
+                        </tr>
+                        <tr>
+                            <td>border</td>
+                            <td>widthBorder - styleLine(solid/dashed) - color</td>
+                            <td>Need to set table, th, and td to have a border to show the gridlines in the browser.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            <section id="table_tags">
+                <h2>Table Customization</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th scope="col">Property</th>
+                            <th scope="col">Possible Values</th>
+                            <th scope="col">Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>border-collapse</td>
+                            <td>'collapse'/'separate'</td>
+                            <td>If set to 'collapse' then cells inside a table will share borders. If set to 'separate', then each cell will have different borders. This only applies when targerting the table directly.</td>
+                        </tr>
+                        <tr>
+                            <td>border-spacing</td>
+                            <td>numer</td>
+                            <td>If this is 0, it will appear as if there is no separation between cells.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </main>
+
+    </body>
+</html>

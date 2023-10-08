@@ -1,0 +1,70 @@
+* {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('https://fonts.gstatic.com/s/roboto/v30/KFOkCnqEu92Fr1MmgVxEIzIFKw.woff2');
+}
+
+html {
+    background-color: #FFE4C4;
+    font-family: monospace, 'Roboto', sans-serif;
+}
+
+main {
+    padding: 5%;
+}
+
+header {
+    text-align: center;
+}
+
+table {
+    border-collapse: separate;
+    border-spacing: 3px;
+    border: #DEB887 solid 2px;
+    margin: 0 0 10px 0;
+    width: 100%;
+    border-radius: 12px;
+}
+
+h2 {
+    text-align: left;
+    margin: 15px 0 2px 0;
+    color: #A52A2A;
+}
+
+footer {
+    margin: 0 0 10px 7px;
+}
+
+thead th {
+    background-color: #A52A2A;
+    border-radius: 7px;
+    padding: 3px;
+}
+
+tbody td {
+    border-top: #A52A2A solid 1px;
+}
+
+nav ul {
+    margin-top: 7px;
+}
+
+#notes ul {
+    border: #DEB887 dotted 2px;
+    border-radius: 12px;
+    list-style: square;
+    padding: 0;
+    margin: 0;
+    list-style-position: inside;
+    padding: 3px;
+}
+
+/* Target first child td of each tr */
+tr > td:first-child {
+    color: #A52A2A;
+    border-right: #A52A2A solid 1px;
+}
