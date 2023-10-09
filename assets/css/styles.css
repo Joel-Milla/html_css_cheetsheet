@@ -68,7 +68,15 @@ tbody td {
 }
 
 nav ul {
-    margin-top: 7px;
+    margin: 15px 0;
+}
+
+header li {
+    display: inline;
+}
+
+nav li+li::before {
+    content: "-    ";
 }
 
 .notes ul {
