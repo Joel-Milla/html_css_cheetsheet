@@ -35,6 +35,7 @@ table {
     border: #DEB887 solid 2px;
     margin: 0 0 10px 0;
     border-radius: 12px;
+    width: 100%;
 }
 
 h2 {
@@ -49,6 +50,11 @@ footer {
 
 a:hover {
     color: #A52A2A;
+    text-decoration: none;
+}
+
+a:active {
+    font-weight: bold;
 }
 
 thead th {
@@ -65,7 +71,7 @@ nav ul {
     margin-top: 7px;
 }
 
-#notes ul {
+.notes ul {
     border: #DEB887 dotted 2px;
     border-radius: 12px;
     list-style: square;
