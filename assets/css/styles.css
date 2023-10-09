@@ -12,12 +12,21 @@ html {
     font-family: monospace, 'Roboto', sans-serif;
 }
 
-main {
-    padding: 5%;
-}
-
 header {
     text-align: center;
+}
+
+body {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+main {
+    background-color: #f8eeec;
+    padding: 3px 10px;
+    border-radius: 4px;
+    margin-bottom: 7px;
+    margin-top: 8px;
 }
 
 table {
@@ -25,7 +34,6 @@ table {
     border-spacing: 3px;
     border: #DEB887 solid 2px;
     margin: 0 0 10px 0;
-    width: 100%;
     border-radius: 12px;
 }
 
