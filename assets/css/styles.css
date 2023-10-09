@@ -47,6 +47,10 @@ footer {
     margin: 0 0 10px 7px;
 }
 
+a:hover {
+    color: #A52A2A;
+}
+
 thead th {
     background-color: #A52A2A;
     border-radius: 7px;
