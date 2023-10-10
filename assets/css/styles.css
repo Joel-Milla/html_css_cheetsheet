@@ -81,7 +81,6 @@ nav ul {
 
 header li {
     display: inline;
-    margin: 15px 0;
 }
 
 nav li+li::before {
