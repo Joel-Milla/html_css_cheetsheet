@@ -16,6 +16,10 @@ header {
     text-align: center;
 }
 
+h1 {
+    color: #A52A2A;
+}
+
 body {
     max-width: 700px;
     margin: 0 auto;
@@ -67,6 +71,7 @@ header a:hover {
 
 thead th {
     background-color: #A52A2A;
+    color: #f5f5f5;
     border-radius: 7px;
     padding: 3px;
 }
