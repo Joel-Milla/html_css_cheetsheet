@@ -40,6 +40,11 @@
                             <td>Can be applied at the start of the website to all elements (*). Makes size of an element more predicable by resizing the content to have a whole number and not to be modified/added by margin-padding</td>
                         </tr>
                         <tr>
+                            <td>position</td>
+                            <td>static - relative - absolute - fixed - sticky</td>
+                            <td>Static: element positioned according to normal flow of document, no effect. Relative: Postioned according to normal flow of element but can then offset (moved) based on the original position. Absolute: Ignores all elements and position relative to the ancestor. Fixed: element will appear in the same place every time, even if you scroll. Sticky: Similar to fixed, but the element will disappear when the ancestor of the element finishes and is not in current page. </td>
+                        </tr>
+                        <tr>
                             <td>font-style</td>
                             <td>Can be all the possible fonts that exist.</td>
                             <td>Can use a font from <a href="https://fonts.google.com/" target="_blank">google</a> and apply a fallback if the font can't be rendered like sans or sans-serif.</td>
@@ -81,8 +86,8 @@
                         </tr>
                         <tr>
                             <td>list-style</td>
-                            <td>'none'</td>
-                            <td>Removes the default option for bullet points/numbers for the ordered/unordered lists.</td>
+                            <td>'none' or 'url()'</td>
+                            <td>None removes the default option for bullet points of unordered lists. Can also add a url to customize it.</td>
                         </tr>
                         <tr>
                             <td>list-style-position</td>
@@ -93,6 +98,11 @@
                             <td>opacity</td>
                             <td>0-1</td>
                             <td>1 is full opaque, full resolution. 0 value is full transparent, can't see it.</td>
+                        </tr>
+                        <tr>
+                            <td>text-decoration</td>
+                            <td>'none', 'underline', etc</td>
+                            <td>Can be applied  to texts and also to remove the underline of the anchor element.</td>
                         </tr>
                         <tr>
                             <td>text-transform</td>
