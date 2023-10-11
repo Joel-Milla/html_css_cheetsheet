@@ -22,7 +22,76 @@
             </nav>
         </header>
         <main>
-            <section class="general_tags">
+            <section class="flex_tag">
+                <h2>Flexbox Customization</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th scope="col">Property</th>
+                            <th scope="col">Possible Values</th>
+                            <th scope="col">Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>display</td>
+                            <td>'flex' - 'inline-flex'</td>
+                            <td>For cointainer. If display is set flex, the element will be a flex container but will occupy the entire block. If it is set as inline-flex it will cause two flex containers to be in the same line. Both cases cause children to be inline.</td>
+                        </tr>
+                        <tr>
+                            <td>justify-content</td>
+                            <td>flex-start, flex-end, center, space-around, space-between</td>
+                            <td>For container. flex-start: aligns children start (horizontally for rows and vertically for columns. main axis affected, which is the one the direction points). flex-end: aligns children to end. center: center the children. space-around: have 1unit space before and 2 units space between children elements. space-between: have 0units before and all space between children.</td>
+                        </tr>
+                        <tr>
+                            <td>align-items</td>
+                            <td>flex-start, flex-end, center, baseline, stretch</td>
+                            <td>For cointainer. flex-start: position items at top of element (vertically for row and horizontally for columns. cross axis affected, which is the perpendicular direction where it is pointing). flex-end: positione children at the bottom of element. center: position children center of element horizontally. basline: align bottom of all children. stretch: children with min height or no height, will stretch and fill container.</td>
+                        </tr>
+                        <tr>
+                            <td>flex</td>
+                            <td>3 possible values</td>
+                            <td>Can insert flex-grow, flex-shrink and flex-basis in one line inside the flex.</td>
+                        </tr>
+                        <tr>
+                            <td>flex-grow</td>
+                            <td>units</td>
+                            <td>For children. Specify how much the children will grow when the container is growing. This means this will keep more of the extra space than other elements.</td>
+                        </tr>
+                        <tr>
+                            <td>flex-shrink</td>
+                            <td>units</td>
+                            <td>For children. Specify how much the children will shrink when the container is shrinking.</td>
+                        </tr>
+                        <tr>
+                            <td>flex-basis</td>
+                            <td>units</td>
+                            <td>For children. Specify the width of an element before it streches or shrinks.</td>
+                        </tr>
+                        <tr>
+                            <td>align-content</td>
+                            <td>flex-start, flex-end, center, space-between, space-around, stretch</td>
+                            <td>Similar to align-items, but this one tells how couple of rows or more will be aligned. flex-start aligns all rows in the top, flex-end aligns rows bottom, center aligns at cetner, space-between aligns rows evenly with no space above top nor below bottom, space-around space evenly above and below each element (this causes to two items togther to be space double)</td>
+                        </tr>
+                        <tr>
+                            <td>flex-flow</td>
+                            <td>flex-direction , flex-wrap</td>
+                            <td>Define flex-direction and flex-wrap in same line</td>
+                        </tr>
+                        <tr>
+                            <td>flex-wrap</td>
+                            <td>wrap, nowrap, wrap-reverse</td>
+                            <td>For container. wrap: If there is no space in a single row, it will create a new row in next line (below) when resizing the page. wrap-reverse: wrap but in reverse (a line above), nowrap -</td>
+                        </tr>
+                        <tr>
+                            <td>flex-direction</td>
+                            <td>row, column, row-reverse, column-reverse</td>
+                            <td>For cointainer. Tells how the children will be display.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            <section class="general_customization">
                 <h2>General Customization</h2>
                 <table>
                     <thead>
@@ -41,42 +110,45 @@
                         </tr>
                         <tr>
                             <td>position</td>
-                            <td>static - relative - absolute - fixed - sticky</td>
+                            <td>static, relative, absolute, fixed, sticky</td>
                             <td>Static: element positioned according to normal flow of document, no effect. Relative: Postioned according to normal flow of element but can then offset (moved) based on the original position. Absolute: Ignores all elements and position relative to the ancestor. Fixed: element will appear in the same place every time, even if you scroll. Sticky: Similar to fixed, but the element will disappear when the ancestor of the element finishes and is not in current page. </td>
                         </tr>
                         <tr>
                             <td>content</td>
-                            <td>Any string.</td>
+                            <td>Any string</td>
                             <td>Can use the '::after or ::before, etc' to select an element and then add the content to the element.</td>
                         </tr>
                         <tr>
                             <td>font-style</td>
-                            <td>Can be all the possible fonts that exist.</td>
+                            <td>Can be all the possible 
+                                fonts that exist</td>
                             <td>Can use a font from <a href="https://fonts.google.com/" target="_blank">google</a> and apply a fallback if the font can't be rendered like sans or sans-serif.</td>
                         </tr>
                         <tr>
                             <td>font-weight</td>
-                            <td>Can be a number or 'bold'.</td>
+                            <td>Can be a number or 'bold'</td>
                             <td>Details the thickness of a word.</td>
                         </tr>
                         <tr>
                             <td>margin</td>
-                            <td>Four possible values that detail the margin top-right-bottom-left.</td>
+                            <td>Four possible values that 
+                                detail the margin top, right, bottom. left</td>
                             <td>Detail the space between the selector and the other elements.</td>
                         </tr>
                         <tr>
                             <td>padding</td>
-                            <td>Four possible values that detail the padding top-right-bottom-left.</td>
+                            <td>Four possibles values: top-right-bottom-left</td>
                             <td>Detail the space between the content contained on the selector and the border of the selector.</td>
                         </tr>
                         <tr>
-                            <td>background-image</td>
+                            <td>background -image</td>
                             <td>'url(url...)'</td>
                             <td>Details a background-image that will be contained on the selector.</td>
                         </tr>
                         <tr>
                             <td>max-width or min-width</td>
-                            <td>number, percentage, rem, em</td>
+                            <td>number, 
+                                percentage, rem, em</td>
                             <td>The website adapts when the page increase or decreases. This property stops the content from adapting when reaching a max/min width..</td>
                         </tr>
                         <tr>
@@ -86,7 +158,8 @@
                         </tr>
                         <tr>
                             <td>display</td>
-                            <td>'inline-block', 'inline', or 'block'</td>
+                            <td>inline-block or 
+                                 inline, or block</td>
                             <td>Details if certain elements can be together in the same line or will span the whole width of the page. Inline works to put together the text (dont have margin or width/height). Inline-block is used when want to put blocks together, where want to modify the width/height/margin, etc to style the block. </td>
                         </tr>
                         <tr>
@@ -105,33 +178,33 @@
                             <td>1 is full opaque, full resolution. 0 value is full transparent, can't see it.</td>
                         </tr>
                         <tr>
-                            <td>text-decoration</td>
+                            <td>text decoration</td>
                             <td>'none', 'underline', etc</td>
                             <td>Can be applied  to texts and also to remove the underline of the anchor element.</td>
                         </tr>
                         <tr>
                             <td>text-transform</td>
-                            <td>'uppercase' - 'lowercase'</td>
+                            <td>'uppercase', 'lowercase'</td>
                             <td>transforms the text to all uppercase or lower case.</td>
                         </tr>
                         <tr>
-                            <td>text-align</td>
-                            <td>'center' - 'right' - 'left'</td>
+                            <td>text align</td>
+                            <td>'center', 'right', 'left'</td>
                             <td>Align the content based on the parent element of the selector.</td>
                         </tr>
                         <tr>
-                            <td>text-transform</td>
-                            <td>'uppercase' - 'lowercase'</td>
+                            <td>text transform</td>
+                            <td>'uppercase', 'lowercase'</td>
                             <td>transforms the text to all uppercase or lower case.</td>
                         </tr>
                         <tr>
-                            <td>letter-spacing -- word-spacing -- line-height</td>
+                            <td>letter-spacing, word-spacing, line-height</td>
                             <td>Number</td>
                             <td>Modifies the space between the words. The number is a ratio. If want to increase the letter spacing of double the height of each character, then the value will be 2 and if the value is 1 then everything stays the same.</td>
                         </tr>
                         <tr>
                             <td>border</td>
-                            <td>widthBorder - styleLine(solid/dashed) - color</td>
+                            <td>widthBorder, styleLine (solid/ dashed) or color</td>
                             <td>Need to set table, th, and td to have a border to show the gridlines in the browser.</td>
                         </tr>
                     </tbody>
