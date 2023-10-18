@@ -13,10 +13,6 @@ body {
     font-family: monospace, 'Roboto', sans-serif;
 }
 
-footer {
-    margin: 10px 73px;
-}
-
 /* General customization */
 
 
@@ -122,4 +118,18 @@ tbody td {
 tr > td:first-child {
     color: #A52A2A;
     border-right: #A52A2A solid 1px;
+}
+/* Tables */
+
+/* Footer */
+footer {
+    margin: 10px auto;
+    max-width: 800px;
+}
+
+/* Media queries */
+@media only screen and (max-width: 480px) {
+    main {
+        width: 100%;
+    }
 }
