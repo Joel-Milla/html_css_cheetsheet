@@ -22,7 +22,113 @@
             </nav>
         </header>
         <main>
-            <section class="flex_tag">
+            <section class="notes">
+                <h2>Important Notes</h2>
+                <ul>
+                    <li>Important to use media queries to consider the different <a href="https://content.codecademy.com/courses/freelance-1/unit-5/screen-sizes.png?_gl=1*1b3fyly*_ga*NDEwOTU1MTc5NS4xNjk1NzM3NDg3*_ga_3LRZM6TM9L*MTY5NzU4NzIwMi41Mi4xLjE2OTc1ODkxNDMuNjAuMC4w" target="_blank">sizes</a> that exist between devices. Should first look at the breakpoints of the site (by resizing the webiste and searching where it stops to look good). A normal breakpoint is the 'max-width=480px' which is the normal size of a phone.</li>
+                    <li>A media consists of "@media only screen and (media feature)". 'only screen' details that styles will only apply to screens, this value can also be printers, among others. Then the features are the conditions that decide if the CSS should be applied, and they are separated by and 'and' or a ','(comma) that represents an 'or'.</li>
+                    <li>There are two scenarios that will need to scale image proportionally. 
+                        <ul>
+                            <li>First case is when you have an image inside the container in the html, to scale it you need to: <a href="./assets/images/scaling images.png" target="_blank">solution</a>.
+                            Here the overflow avoids the image to be displayed outside the container. The max-width makes image span the entire container and auto height to keep the image consistent and display:block to be on their own and not together with other elements (inline-block, the default state)
+                            </li>
+                            <li>Second scenario is to add a background image to an element, to scale it you need to: <a href="./assets/images/scaling background images.png" target="_blank">solution</a>.
+                            Here if the container is too big the image will not repeat itself (by default images repeat). It will also be always centered. The cover will make the image cover the entire element while keeping the proportions, and it will hide the image if it overflows.
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+            <section class="grid_properties">
+                <h2>Grid Customization</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th scope="col">Property</th>
+                            <th scope="col">Possible Values</th>
+                            <th scope="col">Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>display</td>
+                            <td>grid - inline-grid</td>
+                            <td>To convert an item into a container and declare if will ocuppy the whole block of view or will be inline with other grids.</td>
+                        </tr>
+                        <tr>
+                            <td>justify-self or align self</td>
+                            <td>start, end, center, stretch</td>
+                            <td>This goes for individual items and override the properties justify-items and align items.</td>
+                        </tr>
+                        <tr>
+                            <td>justify-items</td>
+                            <td>start, end, center, stretch</td>
+                            <td>This positions the grid items within the columns, horizontally. Start/end: aligns items at the start/end. center: center, stretch: stretch the items to fill the grid area. without justify-items elements span entire width. center will make them be wide as necessary but no more.</td>
+                        </tr>
+                        <tr>
+                            <td>align-items</td>
+                            <td>start, end, center, stretch</td>
+                            <td>This positions the grid items within the rows, vertically. Start/end: aligns items at the start/end. center: center, stretch: stretch the items to fill height of row. without align-items elements span entire height. center will make them be tall as necessary but no more.</td>
+                        </tr>
+                        <tr>
+                            <td>justify-content</td>
+                            <td>start, end, center, stretch, space-around, space-between, space-evenly</td>
+                            <td>This aligns the columns along the container. start/end/center: aligns the columnsin this container. stretch: stretch the containers horizontally across container. space-around: equal amount of space left and right of everything so causes double space between elements. space-between: includes equal amount space but no space at start/end. space-evenly: space evenly between items.</td>
+                        </tr>
+                        <tr>
+                            <td>align-content</td>
+                            <td>start, end, center, stretch, space-around, space-between, space-evenly</td>
+                            <td>This aligns the rows along the container. start/end/center: aligns the rows inside container. stretch: stretch the containers vertically across container. space-around: equal amount of space left and right of everything so causes double space between elements. space-between: includes equal amount space but no space at start/end. space-evenly: space evenly between items. E.g. the center aligns the rows to be vertically centered inside the container.</td>
+                        </tr>
+                        <tr>
+                            <td>grid-template-areas</td>
+                            <td>add names as layout of the rows/columns.</td>
+                            <td>After giving size to rows and columns, can name each space like a name. To assign other elements that name with grid-area so they are in that area.</td>
+                        </tr>
+                        <tr>
+                            <td>grid-area</td>
+                            <td>grid-row-start / grid- column-start /grid-row-end / grid-column-end</td>
+                            <td>Abbreviation for grid-row and grid-column.</td>
+                        </tr>
+                        <tr>
+                            <td>grid-row or grid-column</td>
+                            <td>grid where item starts + '/' + grid where item ends.</td>
+                            <td>If a container has 3 rows and want an item to be in the first two rows, them the start is in 1 and the end is in 3th grid. Because 3 rows have 4 grids. The same applies for columns. Instead of bein specific, can use 'span 2' at the end to detail that an items should span 2 columns/rows.</td>
+                        </tr>
+                        <tr>
+                            <td>gap</td>
+                            <td>gap between the row and then gap between columns.</td>
+                            <td>Of the availabe width/height, the gap will take the value and reduce the available space for the items.</td>
+                        </tr>
+                        <tr>
+                            <td>grid-auto-rows or grid-auto-columns</td>
+                            <td>px, %, fr, repeat()</td>
+                            <td>If you don't how many element there will be, and you add X new elements then the grid will add automatically a row/columns. You use this property to define the size of the row/column.</td>
+                        </tr>
+                        <tr>
+                            <td>grid-auto-flow</td>
+                            <td>row, column, dense</td>
+                            <td>Specify if there are new elements added, if they should be added to a new row or a column. Dense will try to put holes at the start and fill it with items.</td>
+                        </tr>
+                        <tr>
+                            <td>grid-template</td>
+                            <td>defining the size of each row, then a '/' and then size of eac column.</td>
+                            <td>Define the size of each row and then the size of each column. Use a '/' to separate the different sizes. Can use the 'fr' unit to separate the size in fractions of the grid and prevent overflowing. Can also use repeat()to write less, where repeat(3,1fr) = 1fr 1fr 1fr. If container have variable width (i.e no width specified) then can use minmax() in a row/column to limit the size.</td>
+                        </tr>
+                        <tr>
+                            <td>grid-template-columns</td>
+                            <td>defining the size of each column </td>
+                            <td>Each value will be a single column's width. If use percentage, it will depend on the parent's width.</td>
+                        </tr>
+                        <tr>
+                            <td>grid-template-rows</td>
+                            <td>defining the size of each row </td>
+                            <td>Each value will be a single row's width. if use percentage, it will depend on the parent's height.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            <section class="flex_properties">
                 <h2>Flexbox Customization</h2>
                 <table>
                     <thead>
@@ -200,7 +306,7 @@
                         <tr>
                             <td>letter-spacing, word-spacing, line-height</td>
                             <td>Number</td>
-                            <td>Modifies the space between the words. The number is a ratio. If want to increase the letter spacing of double the height of each character, then the value will be 2 and if the value is 1 then everything stays the same.</td>
+                            <td>Modifies the space between the words. It accepts percentages, ems, rems, and pixels.</td>
                         </tr>
                         <tr>
                             <td>border</td>
@@ -210,7 +316,7 @@
                     </tbody>
                 </table>
             </section>
-            <section class="table_tags">
+            <section class="table_properties">
                 <h2>Table Customization</h2>
                 <table>
                     <thead>
