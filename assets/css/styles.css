@@ -26,6 +26,7 @@ header {
 
 h1 {
     color: #A52A2A;
+    text-align: center;
 }
 
 header a {
@@ -118,6 +119,7 @@ tbody td {
 tr > td:first-child {
     color: #A52A2A;
     border-right: #A52A2A solid 1px;
+    word-wrap: break-word;
 }
 /* Tables */
 
@@ -130,6 +132,6 @@ footer {
 /* Media queries */
 @media only screen and (max-width: 480px) {
     main {
-        width: 100%;
+        max-width: 100%;
     }
 }
