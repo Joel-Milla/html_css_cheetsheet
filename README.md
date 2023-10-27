@@ -11,9 +11,9 @@ This repository hosts a static website that was created to contain relevant info
 - Git for version control
 
 ## Setup
-You can directly view the website here: 
-https://joel-milla.github.io/web_development_documentation/styles.html or you can clone this repository and open the 'index.html' file in a web browser.
-
+You can directly view the website [here](https://joel-milla.github.io/web_development_documentation/styles.html).
+Alternatively, you can clone this repository using the following command:
 ```bash
 git clone https://github.com/Joel-Milla/web_development_documentation.git
 ```
+After cloning, open the 'index.html' file in a web browser.
