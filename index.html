@@ -32,6 +32,51 @@
                     <li>The head of an html should include a " &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;" where the view of the webiste is bein set with the width=deviceWidth and at zoom level 1.0.</li>
                 </ul>
             </section>
+            <section class="head_tags">
+                <h2>Head Tags</h2>
+                <table class="tags">
+                    <thead>
+                        <tr>
+                            <th scope="col">Tag</th>
+                            <th scope="col">Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>title</td>
+                            <td>Declares the name of the title at the top of the page.</td>
+                        </tr>
+                        <tr>
+                            <td>link</td>
+                            <td>Use to link an image or stylesheet to the document. two important attributes, href (the actual link of the file) and rel (relation). rel=icon for favicon and rel=stylesheet for css file.</td>
+                        </tr>
+                        <tr>
+                            <td>&lt;script&gt;</td>
+                            <td>Use the attribute src="./relativePath.js" to link to a script file. Can add the defer attribute to load the script after parsing the HTML. Usefull when script depends on DOM interaction, to ensure that HTML elements are loaded. Can also add async attribute to download scrip on background and load it after downolading it (independent of HTML parser state), useful to load scripts that are independent of other scripts and where doesnt matter when script is executed.</td>
+                        </tr>
+                        <tr>
+                            <td>meta</td>
+                            <td>Can set the charset="UTF-8" to tell the browser to encode some symbols using the UTF-8 standard. can also do: name="viewport" content="width=device-width, initial-scale=1.0" -> this controls the viewport of the website in different devices.</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table class="attributes">
+                    <thead>
+                        <tr>
+                            <th scope="col">Attributes</th>
+                            <th scope="col">Possible Values</th>
+                            <th scope="col">Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>href</td>
+                            <td>url, id (using #X notation), or relative path</td>
+                            <td>Use in anchor elements to link to external webistes or other parts of the document.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
             <section class="header_tags">
                 <h2>Header Tags</h2>
                 <table class="tags">

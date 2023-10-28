@@ -144,7 +144,7 @@ footer {
     }
 }
 /* Modify columns to adapt to mobile for javascript */
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 480px) {
     #javascript tr > td:nth-child(2), #javascript tr > th:nth-child(2) {
         display: none;
     }

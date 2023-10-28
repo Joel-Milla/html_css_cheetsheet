@@ -23,72 +23,71 @@
             </nav>
         </header>
         <main id="javascript">
-            <section class="notes">
-                <h2>Important Notes</h2>
-                <ul>
-                    <li>To link a javascript file, can use the following tag: &lt;script src="./relativePath.js"&gt;&lt;/script&gt;</li>
-                    <li>The defer attribute specifes that the script will be loaded after parsing the HTML file, this improves loading time and UX. Useful when the script depends on DOM interaction, this way it ensures that script will load after the HTML is parsed.</li>
-                    <li>Async attribute for the script tag causes the script to download on the background while HTML is bein parsed and execute immediately after it has been downloaded (regardless if HTML is parsed or not). Useful to load scripts that are independent of other scripts and doesn't matter at what point the script is executed.</li>
-                </ul>
+            <section>
+                <h2>Javascript Methods</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th scope="col">Methods</th>
+                            <th scope="col">Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>.addEventListener()</td>
+                            <td>Use this function for a certain element so it becomes an event target. need to add a string (that is the function) and then add an event handler (code that runs) that responds to that action. It is best practice to create a named separate function for the code that runs and pass it to this method.</td>
+                        </tr>
+                        <tr>
+                            <td>document.element</td>
+                            <td>Used to access every element that is part of the DOM (model of the document HTML).</td>
+                        </tr>
+                        <tr>
+                            <td>document.element.innerHTML</td>
+                            <td>Used to reassing the contents of an element or even add a new element to it.</td>
+                        </tr>
+                        <tr>
+                            <td>document.querySelector ('selector')</td>
+                            <td>Returns the first element in the form of a CSS selector that matches the selector. E.g. 'button' will return the first button found, '.myClass' will return the first element found with that class, '#myId' with that id and so on and so forth.</td>
+                        </tr>
+                        <tr>
+                            <td>document.getElementById('id')</td>
+                            <td>Obtain the element with that ID.</td>
+                        </tr>
+                        <tr>
+                            <td>document.getElementByClassName ('class')</td>
+                            <td>Return an array with all the elements with that class. Can specify an index.</td>
+                        </tr>
+                        <tr>
+                            <td>document.getElementByClassName ('tag')</td>
+                            <td>Return an array with all the elements with that tag. Can specify an index. Tag example is a 'li' or 'h1'</td>
+                        </tr>
+                        <tr>
+                            <td>document.'selectedElement.style.( fontFamily /backgroundColor /etc)</td>
+                            <td>After selecting an element, can use the style property to change the style of the element. Here the camel case is followed instead of spaces.</td>
+                        </tr>
+                        <tr>
+                            <td>.parentNode / .children</td>
+                            <td>Returns the parend node or an array of children from the element selected. if the element doesn't have parent (i.e. document) or doesn't have children, it will return null.</td>
+                        </tr>
+                        <tr>
+                            <td>.createElement ('tag')</td>
+                            <td>Creates an element and it can be assigned as a variable. Can set its own information using 'newElement.id = 'id' and newElement.innerHTML = 'info' . .</td>
+                        </tr>
+                        <tr>
+                            <td>.appendChild ('newElement')</td>
+                            <td>Can append at the end of the children nodes of an element, effectively assinging it a new child.</td>
+                        </tr>
+                        <tr>
+                            <td>.removeChild ('element')</td>
+                            <td>Removes the element from the DOM.</td>
+                        </tr>
+                        <tr>
+                            <td>.hidden</td>
+                            <td>Hides the element after selecting it.</td>
+                        </tr>
+                    </tbody>
+                </table>
             </section>
-            <table class="attributes">
-                <thead>
-                    <tr>
-                        <th scope="col">Attributes</th>
-                        <th scope="col">Description</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>document. element</td>
-                        <td>Used to access every element that is part of the DOM (model of the document HTML).</td>
-                    </tr>
-                    <tr>
-                        <td>document. element. innerHTML</td>
-                        <td>Used to reassing the contents of an element or even add a new element to it.</td>
-                    </tr>
-                    <tr>
-                        <td>document. querySelector ('selector')</td>
-                        <td>Returns the first element in the form of a CSS selector that matches the selector. E.g. 'button' will return the first button found, '.myClass' will return the first element found with that class, '#myId' with that id and so on and so forth.</td>
-                    </tr>
-                    <tr>
-                        <td>document. get ElementBy Id('id')</td>
-                        <td>Obtain the element with that ID.</td>
-                    </tr>
-                    <tr>
-                        <td>document. get ElementBy ClassName ('class')</td>
-                        <td>Return an array with all the elements with that class. Can specify an index.</td>
-                    </tr>
-                    <tr>
-                        <td>document. getElementBy ClassName ('tag')</td>
-                        <td>Return an array with all the elements with that tag. Can specify an index. Tag example is a 'li' or 'h1'</td>
-                    </tr>
-                    <tr>
-                        <td>document. 'selectedElement'. style. (fontFamily /backgroundColor /etc)</td>
-                        <td>After selecting an element, can use the style property to change the style of the element. Here the camel case is followed instead of spaces.</td>
-                    </tr>
-                    <tr>
-                        <td>.parentNode / .children</td>
-                        <td>Returns the parend node or an array of children from the element selected. if the element doesn't have parent (i.e. document) or doesn't have children, it will return null.</td>
-                    </tr>
-                    <tr>
-                        <td>.createElement ('tag')</td>
-                        <td>Creates an element and it can be assigned as a variable. Can set its own information using 'newElement.id = 'id' and newElement.innerHTML = 'info' . .</td>
-                    </tr>
-                    <tr>
-                        <td>.appendChild ('newElement')</td>
-                        <td>Can append at the end of the children nodes of an element, effectively assinging it a new child.</td>
-                    </tr>
-                    <tr>
-                        <td>.removeChild ('element')</td>
-                        <td>Removes the element from the DOM.</td>
-                    </tr>
-                    <tr>
-                        <td>.hidden</td>
-                        <td>Hides the element after selecting it.</td>
-                    </tr>
-                </tbody>
-            </table>
         </main>
         <footer>
             <h6>Posted by: <em>Joel Milla</em></h6>
