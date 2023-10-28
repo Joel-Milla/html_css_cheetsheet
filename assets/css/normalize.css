@@ -25,11 +25,9 @@ time, mark, audio, video {
 	padding: 0;
 	border: 0;
 	vertical-align: baseline;
-	/* ***********************
-	erased in order to have the font size
 	font-size: 100%;
 	font: inherit;
-	*/
+	
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 

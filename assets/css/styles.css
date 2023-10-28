@@ -8,11 +8,37 @@
     src: url('https://fonts.gstatic.com/s/roboto/v30/KFOkCnqEu92Fr1MmgVxEIzIFKw.woff2');
 }
 
-body {
-    background-color: #FFE4C4;
+html {
+    font-size: 16px;
     font-family: monospace, 'Roboto', sans-serif;
 }
 
+body {
+    background-color: #FFE4C4;
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: 800;
+    text-align: center;
+    color: #A52A2A;
+}
+
+h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+h6 {
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+@media only screen and (min-width: 2000px) {
+    html {
+        font-size: 20px;
+    }
+}
 /* General customization */
 
 
@@ -20,27 +46,25 @@ body {
 header {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-}
-
-h1 {
-    color: #A52A2A;
-    text-align: center;
 }
 
 header a {
     text-decoration: none;
 }
 
-a:hover {
-    color: #A52A2A;
-    text-decoration: none;
-    transition: color .15s;
+header a:link {
+    color: #a14d4d;
 }
 
-a:active {
-    font-weight: bold;
+header a:hover {
+    font-weight: 520;
+    text-decoration: none;
+    color: #920e0e;
+}
+
+header a:active {
+    font-weight: bolder;
 }
 
 nav ul {
@@ -59,7 +83,7 @@ nav li+li::before {
 /* Main customization */
 main {
     display: flex;
-    flex-flow: row wrap;
+    flex-direction: column;
     margin: 8px auto;
     max-width: 800px;
     padding: 3px 10px;
