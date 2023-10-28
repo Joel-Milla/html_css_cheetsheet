@@ -3,7 +3,8 @@ This repository hosts a static website that was created to contain relevant info
 
 ## Features
 - Contains my own notes and tags that I consider important about HTML in the form of tables with a small description of each tag.
-- Contains my own notes of the properties I use the most coupled with a small description in the form of tables. It also includes my notes on making a website responsive.
+- Contains my own notes of the properties I use the most of CSS coupled with a small description in the form of tables. It also includes my notes on making a website responsive.
+- Contains important notes and methods about javascript related to web development and a small description of each method.
 
 ## Technologies Used
 - HTML5
