@@ -52,7 +52,7 @@
                         </tr>
                         <tr>
                             <td>&lt;script&gt;</td>
-                            <td>Use the attribute src="./relativePath.js" to link to a script file. Can add the defer attribute to load the script after parsing the HTML. Usefull when script depends on DOM interaction, to ensure that HTML elements are loaded. Can also add async attribute to download scrip on background and load it after downolading it (independent of HTML parser state), useful to load scripts that are independent of other scripts and where doesnt matter when script is executed.</td>
+                            <td>Use the attribute src="./relativePath.js" to link to a script file.</td>
                         </tr>
                         <tr>
                             <td>meta</td>
@@ -73,6 +73,16 @@
                             <td>href</td>
                             <td>url, id (using #X notation), or relative path</td>
                             <td>Use in anchor elements to link to external webistes or other parts of the document.</td>
+                        </tr>
+                        <tr>
+                            <td>defer</td>
+                            <td>no possible values</td>
+                            <td>Used in script element, it loads the script after parsing the HTML. Useful when the script depends on DOM interaction, to ensure the HTML elements are already loaded to interact with them.</td>
+                        </tr>
+                        <tr>
+                            <td>async</td>
+                            <td>no possible values</td>
+                            <td>Used in the script element, it downloads the script on the background and load it right after the download finsihed (independent if the HTML was already parsed). Useful to load scripts that are independent of other scripts or when it doesn't matter the time the script is ran.</td>
                         </tr>
                     </tbody>
                 </table>
