@@ -23,6 +23,12 @@
             </nav>
         </header>
         <main id="javascript">
+            <section class="notes">
+                <h2>Important Notes</h2>
+                <ul>
+                    <li>An event object can be passed to a function that serves as event handler. Using that object, can use the  .target (to obtain the element that called the function) or .type (to obtain the name of the event, i.e 'click') or .timeStamp (to access the number of miliseconds that passed since the page was loaded). </li>
+                </ul>
+            </section>
             <section>
                 <h2>Javascript Methods</h2>
                 <table>
@@ -34,8 +40,12 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td>.addEventListener()</td>
-                            <td>Use this function for a certain element so it becomes an event target. need to add a string (that is the function) and then add an event handler (code that runs) that responds to that action. It is best practice to create a named separate function for the code that runs and pass it to this method.</td>
+                            <td>.removeEventListener( 'string of the name of the action', 'function that will not run' )</td>
+                            <td>This function will stop an element to listen to a ceratin event and to run a certain action. This can be added after an event happens inside an event handler to avoid the element to run something after doing certain event.</td>
+                        </tr>
+                        <tr>
+                            <td>.addEventListener( 'string of the name of the action', 'function to run' )</td>
+                            <td>Use this function for a certain element so it becomes an event target (that listens for a specific action). Need to add a string (that is the function) and then add an event handler (code that runs) that responds to that action. It is best practice to create a named separate function for the code that runs and pass it to this method. This function allows for multiple functions to be associated to a single element.</td>
                         </tr>
                         <tr>
                             <td>document.element</td>
