@@ -26,6 +26,8 @@
             <section class="notes">
                 <h2>Important Notes</h2>
                 <ul>
+                    <li>Can use BEM classing name methodology to name the classes. Can be block__element -> main__heading. Can use also block--modification (to target elements that will be modified) -> button--disabled</li>
+                    <li>Avoid using ul elements inside ul elements and div elements being exact children of ul elements.</li>
                     <li>The correct order for anchor elements to cascade properly is ":link", ":visited", ":hover", and ":active".</li>
                     <li>Height and width percentages are proportional to the heigh and width of the parent container. If want to use percentages for margin/padding, this will depend only on the <em>width</em> of the parent container. Also, for both cases, the width/height of the parent must be set first, if not weird things will happen.</li>
                     <li>Important to use media queries to consider the different <a href="https://content.codecademy.com/courses/freelance-1/unit-5/screen-sizes.png?_gl=1*1b3fyly*_ga*NDEwOTU1MTc5NS4xNjk1NzM3NDg3*_ga_3LRZM6TM9L*MTY5NzU4NzIwMi41Mi4xLjE2OTc1ODkxNDMuNjAuMC4w" target="_blank">sizes</a> that exist between devices. Should first look at the breakpoints of the site (by resizing the webiste and searching where it stops to look good). A normal breakpoint is the 'max-width=480px' which is the normal size of a phone.</li>
