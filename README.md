@@ -17,4 +17,4 @@ Alternatively, you can clone this repository using the following command:
 ```bash
 git clone https://github.com/Joel-Milla/web_development_documentation.git
 ```
-After cloning, open the 'index.html' file in a web browser.
+After cloning, open any of the files in the html folder in a web browser.

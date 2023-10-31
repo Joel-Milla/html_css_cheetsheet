@@ -6,19 +6,19 @@
         <meta charset="UTF-8">
         <title>WebDev Documentation</title>
         <!-- Favicon -->
-        <link rel="icon" type="image/x-icon" href="./assets/images/webdev.svg">
+        <link rel="icon" type="image/x-icon" href="../assets/images/webdev.svg">
         <!-- Styles links -->
-        <link rel="stylesheet" href="./assets/css/normalize.css">
-        <link rel="stylesheet" href="./assets/css/styles.css">
+        <link rel="stylesheet" href="../assets/css/reset.css">
+        <link rel="stylesheet" href="../assets/css/styles.css">
     </head>
     <body>
         <header>
             <h1>CSS Property Reference</h1>
             <nav>
                 <ul>
-                    <li><a href="./index.html">HTML</a></li>
-                    <li><a href="./styles.html">CSS</a></li>
-                    <li><a href="./javascript.html">Javascript</a></li>
+                    <li><a href="./HTML_Tags_Guide.html">HTML</a></li>
+                    <li><a href="./CSS_Properties_Guide.html">CSS</a></li>
+                    <li><a href="./JavaScript_Properties_Guide.html">Javascript</a></li>
                 </ul>
             </nav>
         </header>
@@ -32,10 +32,10 @@
                     <li>A media consists of "@media only screen and (media feature)". 'only screen' details that styles will only apply to screens, this value can also be printers, among others. Then the features are the conditions that decide if the CSS should be applied, and they are separated by and 'and' or a ','(comma) that represents an 'or'.</li>
                     <li>There are two scenarios that will need to scale image proportionally. 
                         <ul>
-                            <li>First case is when you have an image inside the container in the html, to scale it you need to: <a href="./assets/images/scaling images.png" target="_blank">solution</a>.
+                            <li>First case is when you have an image inside the container in the html, to scale it you need to: <a href="../assets/images/scaling images.png" target="_blank">solution</a>.
                             Here the overflow avoids the image to be displayed outside the container. The max-width makes image span the entire container and auto height to keep the image consistent and display:block to be on their own and not together with other elements (inline-block, the default state)
                             </li>
-                            <li>Second scenario is to add a background image to an element, to scale it you need to: <a href="./assets/images/scaling background images.png" target="_blank">solution</a>.
+                            <li>Second scenario is to add a background image to an element, to scale it you need to: <a href="../assets/images/scaling background images.png" target="_blank">solution</a>.
                             Here if the container is too big the image will not repeat itself (by default images repeat). It will also be always centered. The cover will make the image cover the entire element while keeping the proportions, and it will hide the image if it overflows.
                             </li>
                         </ul>
