@@ -16,6 +16,7 @@
             <h1>CSS Property Reference</h1>
             <nav>
                 <ul>
+                    <li><a href="./Best_Practices.html">Best Practices</a></li>
                     <li><a href="./HTML_Tags_Guide.html">HTML</a></li>
                     <li><a href="./CSS_Properties_Guide.html">CSS</a></li>
                     <li><a href="./JavaScript_Properties_Guide.html">Javascript</a></li>
@@ -24,9 +25,8 @@
         </header>
         <main id="css">
             <section class="notes">
-                <h2>Important Notes</h2>
+                <h2>General Notes</h2>
                 <ul>
-                    <li>Can use BEM classing name methodology to name the classes. Can be block__element -> main__heading. Can use also block--modification (to target elements that will be modified) -> button--disabled</li>
                     <li>Avoid using ul elements inside ul elements and div elements being exact children of ul elements.</li>
                     <li>The correct order for anchor elements to cascade properly is ":link", ":visited", ":hover", and ":active".</li>
                     <li>Height and width percentages are proportional to the heigh and width of the parent container. If want to use percentages for margin/padding, this will depend only on the <em>width</em> of the parent container. Also, for both cases, the width/height of the parent must be set first, if not weird things will happen.</li>
@@ -42,6 +42,12 @@
                             </li>
                         </ul>
                     </li>
+                </ul>
+                <h2>Fonts Notes</h2>
+                <ul>
+                    <li>Can use BEM classing name methodology to name the classes. Can be block__element -> main__heading. Can use also block--modification (to target elements that will be modified) -> button--disabled</li>
+                    <li>The font-size/family should be applied to the html element.</li>
+                    <li>font-display: swap -> displays a text in a system font until the custom font is available. Correct way of declaring a font is in <a href="../assets/images/font-family-declaration.png" target="_blank">here</a>.</li>
                 </ul>
             </section>
             <section class="grid_properties">
