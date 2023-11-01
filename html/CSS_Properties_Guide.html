@@ -27,6 +27,9 @@
             <section class="notes">
                 <h2>General Notes</h2>
                 <ul>
+                    <li><b>Inline element</b> don't have line break, respect margin and padding horizontally but not vertically, can't have width and height set. <b>Block elements</b> create line break, respect margin and padding both dimensions, can have width and height set. <b>Inline-block</b> don't create line break, respect margin and padding both dimensions, can have width and height set.</li>
+                    <li>Block elements like div, ul, li take as much width possible for parent element but not height. Setting element as flex or grid, allows to set explicitely width and height of block child elements.</li>
+                    <li>Flex direction of row makes the child elements to stretch to fill the height and with column to fill the elements width.</li>
                     <li>Avoid using ul elements inside ul elements and div elements being exact children of ul elements.</li>
                     <li>The correct order for anchor elements to cascade properly is ":link", ":visited", ":hover", and ":active".</li>
                     <li>Height and width percentages are proportional to the heigh and width of the parent container. If want to use percentages for margin/padding, this will depend only on the <em>width</em> of the parent container. Also, for both cases, the width/height of the parent must be set first, if not weird things will happen.</li>
